@@ -28,9 +28,9 @@ public class ArraysMuldimensionais02 {
 
         // Iteração com loops aninhados
         System.out.println("Todos os elementos da matriz:");
-        for (int i = 0; i < matriz.length; i++) {
-            for (int j = 0; j < matriz[i].length; j++) {
-                System.out.print(matriz[i][j] + " ");
+        for (int[] matriz1 : matriz) {
+            for (int j = 0; j < matriz1.length; j++) {
+                System.out.print(matriz1[j] + " ");
             }
             System.out.println();  // Nova linha após cada linha da matriz
         }

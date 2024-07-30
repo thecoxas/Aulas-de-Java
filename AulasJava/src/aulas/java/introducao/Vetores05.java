@@ -18,11 +18,11 @@ public class Vetores05 {
         for (int values : random) {
             System.out.print(values + " ");
         }
-        
-        int search[] = {1 ,2 , 3, 4, 5, 6};
+        */
+        int search[] = {10 ,2 , 3, 4, 5, 6};
         int pos = Arrays.binarySearch(search, 4); // mostra a posição do numero em seu Indice correspondente
         System.out.println("The number 4 is in the index "+pos);
-         */
+         
         int number[] = new int[20];
         Arrays.fill(number, 25);  // Preenche automaticamente os indices com um número prédefinido
         for(int values:number){
