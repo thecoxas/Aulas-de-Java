@@ -16,6 +16,22 @@ public class Carro { // A classe é um  plano para criar objetos
     double capCombustivel;
     double consCombustivel;
     
+    Carro(){ // construtor simples sem parâmetro
+        
+    }
+    
+    Carro(String marca){   // construtor com apenas 1 parâmetro
+        this.marca = marca;
+    }
+    // Construtor com varios parâmetros
+    Carro(String marca, String modelo, int numPassageiro, double capCombustivel, double consCombustivel){
+        this.marca = marca;
+        this.modelo = modelo;
+        this.numPassageiro = numPassageiro;
+        this.capCombustivel = capCombustivel;
+        this.consCombustivel = consCombustivel;
+    }
+    
     void exibirAutonomia(){ // Mètodo simples sem retorno
         System.out.println("A autonomia do carro é:"+ capCombustivel*consCombustivel+" Km");
     }

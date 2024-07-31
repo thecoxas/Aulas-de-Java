@@ -51,6 +51,16 @@ public class Concessionaria {
         System.out.println(kmRodados);
         
         System.out.println(caminhonete.calcularCombustivel(100));
+        
+        Carro gol = new Carro("Volksvagen","gol",4,80,10);
+        System.out.println(gol.marca);
+        System.out.println(gol.modelo);
+        System.out.println(gol.numPassageiro);
+        System.out.println(gol.capCombustivel);
+        System.out.println(gol.consCombustivel);
+        
+        Carro brasilia = new Carro("Volksvagen");
+        System.out.println(brasilia.marca);
     }
 
 }
