@@ -16,6 +16,20 @@ public class Carro { // A classe é um  plano para criar objetos
     double capCombustivel;
     double consCombustivel;
     
+    void exibirAutonomia(){ // Mètodo simples sem retorno
+        System.out.println("A autonomia do carro é:"+ capCombustivel*consCombustivel+" Km");
+    }
+    
+    double obterAutonomia(){
+        System.out.println("Método que precisa retornar algo");
+        
+        return capCombustivel * consCombustivel;
+    }
+    
+    double calcularCombustivel(double km){
+        double qtdQuilometros = km/consCombustivel;
+        return qtdQuilometros;
+    }
     
     
 }

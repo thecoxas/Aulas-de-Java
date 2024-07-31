@@ -19,7 +19,7 @@ public class Concessionaria {
         sport.modelo = "huracan";
         sport.numPassageiro = 2;
         sport.capCombustivel = 80;
-        sport.consCombustivel = 10;
+        sport.consCombustivel = 5.1;
 
         System.out.println(sport.marca);
         System.out.println(sport.modelo);
@@ -36,6 +36,21 @@ public class Concessionaria {
         System.out.println(caminhonete.modelo);
         System.out.println(caminhonete.capCombustivel);
         System.out.println(caminhonete.consCombustivel);
+        
+        caminhonete.exibirAutonomia();
+        sport.exibirAutonomia();
+        System.out.println("-----------------------------------------------------");
+        caminhonete.obterAutonomia(); // aqui o método quando chamado nao tras o retorno mais nao o exibe na tela 
+        
+        double autonomia = caminhonete.obterAutonomia(); // chama o método e guarda o retorno na variavel autonomia
+        System.out.println(autonomia);  // apresenta o retorno na tela
+        
+        System.out.println(sport.obterAutonomia()); // exibe o retorno diretamente na tela
+        System.out.println("Calculando a quantidade litros de gasolina para uma certa distancia");
+        double kmRodados = sport.calcularCombustivel(25);
+        System.out.println(kmRodados);
+        
+        System.out.println(caminhonete.calcularCombustivel(100));
     }
 
 }

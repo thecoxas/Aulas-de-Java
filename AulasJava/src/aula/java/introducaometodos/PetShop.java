@@ -17,7 +17,7 @@ public class PetShop {
         cat.sleep("acordado");
         cat.play();
         dog.feed();
-        
+        dog.play();
     }
     
 }

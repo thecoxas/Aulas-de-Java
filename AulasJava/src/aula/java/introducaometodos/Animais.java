@@ -19,13 +19,15 @@ public class Animais {
     modificador de acesso public, static
     void => nao especifica o que sera retornado, pode ser um objeto, String e qualquer tipo primitivo
      */
-    public static void sleep(String x) {
+    void sleep(String x) {
         System.out.println(x);
     }
-    public static void play(){
+
+    void play() {
         System.out.println("brincando");
     }
-    public static void feed(){
+
+    void feed() {
         System.out.println("alimentado");
     }
 
