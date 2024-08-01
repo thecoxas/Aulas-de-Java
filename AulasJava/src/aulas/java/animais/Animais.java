@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package aulas.java.introducaometodos;
+package aulas.java.animais;
 
 /**
  *
@@ -10,10 +10,27 @@ package aulas.java.introducaometodos;
  */
 public class Animais {
 
-    String name;
-    String breed;
-    String color;
-    int age;
+    public String name;
+    public String breed;
+    public String color;
+    public int age;
+
+    public Animais() {
+    }
+
+    public Animais(String name, String breed) {
+        this.name = name;
+        this.breed = breed;
+        System.out.println("Construtor com 2 parâmetros");
+    }
+
+    public Animais(String name, String breed, String color, int age) {
+        this.name = name;
+        this.breed = breed;
+        this.color = color;
+        this.age = age;
+        System.out.println("Chamando construtor com 4 parâmetros");
+    }
 
     /*
     modificador de acesso public, static

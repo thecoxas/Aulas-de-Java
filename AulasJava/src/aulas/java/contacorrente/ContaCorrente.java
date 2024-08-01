@@ -11,9 +11,16 @@ package aulas.java.contacorrente;
 public class ContaCorrente {
 
     int numConta;
-    double saldo;
+    public double saldo;
     boolean especial;
     double limite;
+
+    public ContaCorrente(double saldo) {
+        this.saldo = saldo;
+    }
+
+    public ContaCorrente() {
+    }
 
     double Sacar(double valorSaque) {
 

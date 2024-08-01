@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package aulas.java.introducaoclasse;
+package aulas.java.carro;
 
 /**
  *
@@ -16,20 +16,24 @@ public class Carro { // A classe é um  plano para criar objetos
     double capCombustivel;
     double consCombustivel;
     
+    // Um construtor é um bloco de código especial dentro de uma classe, 
+    //designado para inicializar novos objetos.
+    
     Carro(){ // construtor simples sem parâmetro
         
     }
     
-    Carro(String marca){   // construtor com apenas 1 parâmetro
-        this.marca = marca;
+    Carro(String marca_){   // construtor com apenas 1 parâmetro
+        marca = marca_;
     }
     // Construtor com varios parâmetros
-    Carro(String marca, String modelo, int numPassageiro, double capCombustivel, double consCombustivel){
-        this.marca = marca;
-        this.modelo = modelo;
-        this.numPassageiro = numPassageiro;
-        this.capCombustivel = capCombustivel;
-        this.consCombustivel = consCombustivel;
+    Carro(String marca_, String modelo_, int numPassageiro_, double capCombustivel_, 
+            double consCombustivel_){
+        marca = marca_;
+        modelo = modelo_;
+        numPassageiro = numPassageiro_;
+        capCombustivel = capCombustivel_;
+        consCombustivel = consCombustivel_;
     }
     
     void exibirAutonomia(){ // Mètodo simples sem retorno
