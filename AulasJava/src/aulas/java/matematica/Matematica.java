@@ -10,23 +10,23 @@ package aulas.java.matematica;
  */
 public class Matematica {
 
-    public int soma(int x, int y) {
+    public static int soma(int x, int y) {
         return x + y;
     }
 
-    public double soma(double x, int y) {
+    public static double soma(double x, int y) {
         return x + y;
     }
 
-    public int soma(int x, int y, int z) {
+    public static int soma(int x, int y, int z) {
         return x + y + z;
     }
 
-    public double soma(double x, double y, int z) {
+    public static double soma(double x, double y, int z) {
         return x + y + z;
     }
 
-    public int soma(int x[]) {
+    public static int soma(int x[]) {
         int total = 0;
         for (int i = 0; i < x.length; i++) {
             total += x[i];

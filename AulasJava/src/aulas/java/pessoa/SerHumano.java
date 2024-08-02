@@ -6,6 +6,7 @@ package aulas.java.pessoa;
 
 import aulas.java.animais.Animais;
 import aulas.java.contacorrente.ContaCorrente;
+import aulas.java.estatico.TestEstatico;
 
 /**
  *
@@ -31,6 +32,11 @@ public class SerHumano {
         */
         System.out.println("O cachorro " + dog.name + " é do " + ser1.name + " e Ele tem " + conta.saldo
                 + " na conta do banco");
+        
+        // testando o static
+        TestEstatico.metodoTeste();
+        String nome = TestEstatico.nome;
+        System.out.println(nome);
 
     }
 
