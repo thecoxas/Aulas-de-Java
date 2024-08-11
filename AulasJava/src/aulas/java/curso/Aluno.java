@@ -40,8 +40,8 @@ public class Aluno {
 
     public String getInfo() {
         String info = "Nome do aluno: " + nome;
-        info += "Numero da matrícula: " + matricula;
-        info += "Notas: ";
+        info += " Numero da matrícula: " + matricula;
+        info += " Notas: ";
 
         double soma = 0;
         for (double nota : notas) {
@@ -49,7 +49,7 @@ public class Aluno {
             info += nota + " ";
         }
         double media = soma / 4;
-        info += "\n" + media + " - ";
+        info += "\n" + "Media" + media + " - ";
         if (media > 7) {
             info += "APROVADO!";
         } else {
@@ -64,6 +64,6 @@ public class Aluno {
             soma += nota;
 
         }
-        return soma/4;
+        return soma / 4;
     }
 }

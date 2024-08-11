@@ -37,7 +37,7 @@ public class Professor {
         this.email = email;
     }
     public String getInfo(){
-        return "professor: "+ nome;
+        return "professor: "+ nome+"\n";
     }
     
 }

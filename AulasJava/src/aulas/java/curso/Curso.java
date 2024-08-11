@@ -57,7 +57,7 @@ public class Curso {
             System.out.println("############Alunos###############");
             for (Aluno aluno : alunos) {
                 if(aluno != null){
-                    aluno.getInfo();
+                    info += aluno.getInfo();
                     info += "\n";
                 }
                 
