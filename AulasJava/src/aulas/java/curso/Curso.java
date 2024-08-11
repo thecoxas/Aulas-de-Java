@@ -39,13 +39,14 @@ public class Curso {
         this.professor = professor;
     }
 
-    public Aluno[] getAluno() {
+    public Aluno[] getAlunos() {
         return alunos;
     }
 
-    public void setAluno(Aluno[] aluno) {
-        this.alunos = aluno;
+    public void setAlunos(Aluno[] alunos) {
+        this.alunos = alunos;
     }
+
 
     public String getInfo() {
         String info = "Nome do curso: " + nome + "\n";

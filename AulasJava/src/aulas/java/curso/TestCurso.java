@@ -65,7 +65,7 @@ public class TestCurso {
             
             alunos[i] = aluno;     
         }
-        curso.setAluno(alunos);
+        curso.setAlunos(alunos);
         
         System.out.println(curso.getInfo());
     }
