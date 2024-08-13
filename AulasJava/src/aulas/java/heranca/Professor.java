@@ -8,7 +8,7 @@ package aulas.java.heranca;
  *
  * @author Welton
  */
-public class Professor extends Pessoa {
+public class Professor extends Pessoa {  // Professor É UMA Pessoa
     
     private String departamento;
     private String nomeCurso;
@@ -40,5 +40,8 @@ public class Professor extends Pessoa {
     
     public double calcularSalarioLiquido(){
         return 0;
+    }
+    public void metodoQualquer(){
+        
     }
 }

@@ -11,8 +11,8 @@ package aulas.java.relacionamentos;
 public class Contato {
 
     private String name;
-    private Endereco address;
-    private Telefone[] fones;
+    private Endereco address; // Contato TEM UM Endereço
+    private Telefone[] fones; // Contato TEM UM Telefone
 
     public String getName() {
         return name;

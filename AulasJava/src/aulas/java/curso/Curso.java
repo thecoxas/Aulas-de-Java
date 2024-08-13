@@ -12,8 +12,8 @@ public class Curso {
 
     private String nome;
     private String horario;
-    private Professor professor;
-    private Aluno[] alunos;
+    private Professor professor; // Curso TEM UM Professor
+    private Aluno[] alunos; // Curso TEM MUITOS Alunos
 
     public String getNome() {
         return nome;
