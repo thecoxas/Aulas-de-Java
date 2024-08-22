@@ -9,18 +9,22 @@ package aulas.java.instance;
  * @author Welton
  */
 public class Main {
+
     public static void main(String[] args) {
         Pessoa pessoa = new Pessoa();
         Aluno aluno = new Aluno();
         Professor prof = new Professor();
-        
-        if(pessoa instanceof Pessoa){
+
+        /*   Operador instanceof
+        Verifica se um objeto é instância de uma determinada classe ou interface
+         */
+        if (pessoa instanceof Pessoa) {
             System.out.println("Objeto do tipo Pessoa");
         }
-        if(aluno instanceof Aluno){
+        if (aluno instanceof Aluno) {
             System.out.println("Objeto do tipo Aluno");
         }
-        if(prof instanceof Professor){
+        if (prof instanceof Professor) {
             System.out.println("Objeto do tipo Professor");
         }
     }
