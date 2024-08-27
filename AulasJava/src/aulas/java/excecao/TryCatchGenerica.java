@@ -8,7 +8,7 @@ package aulas.java.excecao;
  *
  * @author Welton
  */
-public class MultiplosCatchGenerico {
+public class TryCatchGenerica {
 
     public static void main(String[] args) {
         int numeros[] = {4, 8, 16, 32, 64, 128,};
@@ -17,13 +17,12 @@ public class MultiplosCatchGenerico {
         for (int i = 0; i < numeros.length; i++) {
             try {
                 System.out.println(numeros[i] + " /" + denom[i] + " =" + (numeros[i] / denom[i]));
-            } catch (ArithmeticException e) {
-                System.out.println("Dividir por 0 da erro !");
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+                e.printStackTrace();
 
-            } catch (Throwable e) { //  The Throwable class is the superclass of all errors and exceptions in the Java language.
-                System.out.println("Ocorreu um erro!");
             }
-        }
 
+        }
     }
 }
