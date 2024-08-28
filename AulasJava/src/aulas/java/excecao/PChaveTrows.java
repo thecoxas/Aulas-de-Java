@@ -28,6 +28,10 @@ public class PChaveTrows {
     }
 
     public static double leNumero() throws Exception {
+        /*
+        throws Exception: Esta parte do método indica que o método leNumero pode lançar uma exceção do tipo Exception. Isso significa que, 
+        se ocorrer um erro durante a execução do método, ele "lança" essa exceção para ser tratada em outro lugar, como no método que chamou leNumero.
+        */
         Scanner scan = new Scanner(System.in);
         double num = scan.nextDouble();
         return num;
