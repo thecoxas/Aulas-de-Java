@@ -14,16 +14,65 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        
-        int option = getOptionMenu(scan);
-        
-        if(option == 1){
-            String nameContato = readInformation(scan, "Enter with name contact");
+        Agenda agenda = new Agenda();
+
+        int option = 1;
+
+        while (option != 3) {
+            option = getOptionMenu(scan);
+
+            if (option == 1) {
+                addContact(scan, agenda);
+
+            } else if (option == 2) {
+                queryContact(scan, agenda);
+
+            } else if (option == 3) {
+                System.exit(0);
+            }
+
         }
 
     }
-    
-    public static String readInformation(Scanner scan, String msg){
+
+    public static void queryContact(Scanner scan, Agenda agenda) {
+        String nameContatc = readInformation(scan, "Search contact");
+        try {
+            if (agenda.queryByName(nameContatc) >= 0) {
+                System.out.println("Contact exists");
+
+            }
+        } catch (ContactNotExistException e) {
+            System.out.println(e.getMessage());
+        }
+
+    }
+
+    public static void addContact(Scanner scan, Agenda agenda) {
+        try {
+            System.out.println("Creating contact, Enter the information");
+            String name = readInformation(scan, "Enter the name");
+            String email = readInformation(scan, "Enter the email");
+            String phoneNumber = readInformation(scan, "Enter the phone number");
+
+            Contact contact = new Contact();
+            contact.setName(name);
+            contact.setEmail(email);
+            contact.setPhoneNumber(phoneNumber);
+
+            System.out.println("contact to be created");
+            System.out.println(contact);
+            
+            agenda.addContactAgenda(contact);
+        } catch (AgendaFullException e) {
+            System.out.println(e.getMessage());
+            
+            System.out.println("phonebook contacts");
+            System.out.println(agenda);
+        }
+    }
+
+    public static String readInformation(Scanner scan, String msg) {
         System.out.println(msg);
         String entrada = scan.nextLine();
         return entrada;

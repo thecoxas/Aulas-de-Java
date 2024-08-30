@@ -16,13 +16,13 @@ public class Agenda {
         contacts = new Contact[5];
     }
 
-    public void addContact(Contact c) throws AgendaFullException {
+    public void addContactAgenda(Contact c) throws AgendaFullException {
         boolean full = true;
         for (int i = 0; i < contacts.length; i++) {
-            if (contacts[i] != null) {
+            if (contacts[i] == null) {
                 contacts[i] = c;
                 full = false;
-
+                break;
             }
             if (full) {
                 throw new AgendaFullException();
@@ -47,7 +47,10 @@ public class Agenda {
     public String toString() {
         String s = "";
         for (Contact c : contacts) {
-            s += c.toString() + "\n";
+            if (c != null) {
+               s += c.toString() +"\n";
+            }
+
         }
         return s;
     }
